@@ -18,9 +18,27 @@
     <ClInclude Include="vibdec.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Application\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="States\Mainstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\Mainstate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
