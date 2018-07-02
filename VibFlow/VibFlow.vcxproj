@@ -76,10 +76,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\cesar\Desktop\C++\Repositories\VibFlow\Deps\glm-0.9.8.5;C:\Users\cesar\Desktop\C++\Repositories\VibFlow\Deps\glfw-3.2.1.bin.WIN32\include;C:\Users\cesar\Desktop\C++\Repositories\VibFlow\Deps\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Deps\glm-0.9.8.5;..\Deps\glfw-3.2.1.bin.WIN32\include;..\Deps\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>C:\Users\cesar\Desktop\C++\Repositories\VibFlow\Deps\glfw-3.2.1.bin.WIN32\lib-vc2015;C:\Users\cesar\Desktop\C++\Repositories\VibFlow\Deps\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Deps\glfw-3.2.1.bin.WIN32\lib-vc2015;..\Deps\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
