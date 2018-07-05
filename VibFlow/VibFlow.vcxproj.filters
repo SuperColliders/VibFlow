@@ -27,6 +27,12 @@
     <ClInclude Include="States\Mainstate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GraphicsSystem\Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="States\Mainstate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\GraphicsSystem\Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

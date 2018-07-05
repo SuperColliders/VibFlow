@@ -122,12 +122,16 @@
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\State.h" />
+    <ClInclude Include="Common\common.h" />
+    <ClInclude Include="Core\GraphicsSystem\Program.h" />
     <ClInclude Include="States\Mainstate.h" />
     <ClInclude Include="vibdec.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Application\State.cpp" />
+    <ClCompile Include="Common\common.cpp" />
+    <ClCompile Include="Core\GraphicsSystem\Program.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="States\Mainstate.cpp" />
   </ItemGroup>

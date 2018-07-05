@@ -2,6 +2,7 @@
 #include "../Application/State.h"
 #include "../vibdec.h"
 #include <vector>
+#include "../Core/GraphicsSystem/Program.h"
 
 class Mainstate : public State
 {
@@ -32,5 +33,5 @@ private:
 	GLuint vao;
 	GLuint vbo;
 
-	GLuint time_loc;
+	Program* p;
 };
