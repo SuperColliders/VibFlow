@@ -4,6 +4,7 @@
 
 *.db
 *.opendb
+Deps/
 
 #Ignore vs dir
 .vs/
