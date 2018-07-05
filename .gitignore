@@ -36,3 +36,8 @@ ipch/
 *.vsp
 *.vspx
 *.sap
+
+# Documentation files
+[Dd]oc/
+*.html
+*.htm
