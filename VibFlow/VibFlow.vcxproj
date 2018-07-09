@@ -77,6 +77,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>..\Deps\glm-0.9.8.5;..\Deps\glfw-3.2.1.bin.WIN32\include;..\Deps\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>..\Deps\glfw-3.2.1.bin.WIN32\lib-vc2015;..\Deps\glew-2.1.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -123,6 +124,12 @@
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Application\State.h" />
     <ClInclude Include="Common\common.h" />
+    <ClInclude Include="Core\Component.h" />
+    <ClInclude Include="Core\Entity.h" />
+    <ClInclude Include="Core\GraphicsSystem\Camera.h" />
+    <ClInclude Include="Core\GraphicsSystem\Canvas.h" />
+    <ClInclude Include="Core\GraphicsSystem\GraphicsComponent.h" />
+    <ClInclude Include="Core\GraphicsSystem\GraphicsSystem.h" />
     <ClInclude Include="Core\GraphicsSystem\Program.h" />
     <ClInclude Include="States\Mainstate.h" />
     <ClInclude Include="vibdec.h" />
@@ -131,6 +138,11 @@
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Application\State.cpp" />
     <ClCompile Include="Common\common.cpp" />
+    <ClCompile Include="Core\Entity.cpp" />
+    <ClCompile Include="Core\GraphicsSystem\Camera.cpp" />
+    <ClCompile Include="Core\GraphicsSystem\Canvas.cpp" />
+    <ClCompile Include="Core\GraphicsSystem\GraphicsComponent.cpp" />
+    <ClCompile Include="Core\GraphicsSystem\GraphicsSystem.cpp" />
     <ClCompile Include="Core\GraphicsSystem\Program.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="States\Mainstate.cpp" />
