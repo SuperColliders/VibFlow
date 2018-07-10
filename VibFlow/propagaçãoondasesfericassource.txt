@@ -1,0 +1,41 @@
+void Wave::dudx(float *input,float *output) //calculate du/dx
+{
+    for(int y=0;y<this->height;y++)
+    {
+        for(int x=0;x<this->width;x++)
+        {
+            output[x+y*this->width]=(this->getPoint((x+1)%this->width,y)-this->getPoint(x,y)); //getPoint returns the value of the grid at (x,y)
+        }
+    }
+}
+
+void Wave::dudy(float *input,float *output) //calculate du/dy
+{
+    for(int x=0;x<this->width;x++)
+    {
+        for(int y=0;y<this->height;y++)
+        {
+            output[x+y*this->width]=(this->getPoint(x,(y+1)%this->height)-this->getPoint(x,y));
+        }
+    }
+}
+
+void Wave::simulate(float dt)
+{
+    float c=6.0f;
+
+    //calculate the spatial derivatives
+    this->dudx(this->points,this->buffer);
+    this->dudx(this->buffer,this->d2udx2);
+
+    this->dudy(this->points,this->buffer);
+    this->dudy(this->buffer,this->d2udy2);
+
+    for(int y=0;y<this->height;y++)
+    {
+        for(int x=0;x<this->width;x++)
+        {
+            this->points[x+y*this->width]+=c*c*(this->d2udx2[x+y*this->width]+this->d2udy2[x+y*this->width])*dt*dt; //I know that I can calculate c*c and dt*dt once, but I want to make it clear what I'm doing.
+        }
+    }
+}

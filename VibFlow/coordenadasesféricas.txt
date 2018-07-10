@@ -1,0 +1,9 @@
+static SphereVector from_cartesian( const Ogre::Vector3& cartesian )
+                {
+                        using namespace Ogre;
+                        SphereVector result;
+                        result.radius = cartesian.length();
+                        result.phi    = atan2(x,z);
+                        result.theta  = atan2(hypot(x,z), y);
+                        return result;
+                }
